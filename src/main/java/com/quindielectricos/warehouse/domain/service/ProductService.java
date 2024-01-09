@@ -19,6 +19,9 @@ public class ProductService {
     public Optional<List<Product>> getByCategory(int categoryId){
        return productRepository.getByCategory(categoryId);
     }
+    public Optional<List<Product>>getScarseProduct(int quantity){
+       return productRepository.getScarseProduct(quantity);
+    }
     public Optional<Product>getProduct(int productId){
        return productRepository.getProduct(productId);
     }
